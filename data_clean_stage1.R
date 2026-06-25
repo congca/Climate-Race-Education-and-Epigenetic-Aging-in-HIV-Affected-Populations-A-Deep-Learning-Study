@@ -151,28 +151,20 @@ for(v in factor_vars){
   ] <- mode_value
 }
 
-cat("\n========================\n")
-cat("FINAL ANALYTIC N\n")
-cat("========================\n")
-
+ cat("FINAL ANALYTIC N\n")
+ 
 print(nrow(analysis_df))
 
-cat("\n========================\n")
-cat("MISSING VALUES\n")
-cat("========================\n")
-
+ cat("MISSING VALUES\n")
+ 
 print(colSums(is.na(analysis_df)))
 
-cat("\n========================\n")
-cat("REGION COUNTS\n")
-cat("========================\n")
-
+ cat("REGION COUNTS\n")
+ 
 print(table(analysis_df$region))
 
-cat("\n========================\n")
-cat("TEMPERATURE SUMMARY\n")
-cat("========================\n")
-
+ cat("TEMPERATURE SUMMARY\n")
+ 
 print(summary(analysis_df$Temperature))
 
 write_csv(
